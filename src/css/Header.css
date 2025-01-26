@@ -1,12 +1,14 @@
 header{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    height: 150px;
+    margin-bottom: 30px;
     gap: 20%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 
 header img{
-    width: 110px;
+    width: 90px;
     border-radius: 20px;
 }
 
@@ -16,6 +18,8 @@ header a{
     gap: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-bottom: 3px;
+
 }
 
 header a:hover{

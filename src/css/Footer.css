@@ -7,14 +7,14 @@ footer{
 }
 
 footer img{
-    width: 60px;
+    width: 50px;
     margin: 0 15px 0 15px;
 }
 
 footer a{
     display: flex;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
@@ -25,10 +25,6 @@ footer ul{
 
 footer ul li{
     list-style: none;
-}
-
-hr{
-    opacity: 60%;
 }
 
 .copyrigth{

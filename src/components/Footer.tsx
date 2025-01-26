@@ -20,7 +20,7 @@ function Footer(){
             </ul>
 
             <div className='copyrigth'>
-                <p>&copy; {new Date().getFullYear()}. Este modelo de portifólio está disponível gratuitamente para qualquer pessoa usar.Desde de que o nome do autor original 
+                <p>&copy; {new Date().getFullYear()}. Este modelo de portifólio está disponível para qualquer pessoa usar gratuitamente.Desde de que o nome do autor original 
                     seja mencionado. <a rel='noopener noreferrer' href="#">Clique aqui para ler a documentação</a></p>
             </div>
         </footer>

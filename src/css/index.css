@@ -1,5 +1,7 @@
+/*Estilos CSS globais que são aplicados no projeto inteiro*/
+
 *{
-    background-color: rgb(51, 50, 50);
+    background-color: rgb(80, 78, 78);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,6 +15,11 @@ a{
 
 a:hover{
     color: blue;
-    transform: scale(1.08);
+    transform: scale(1.07);
     transition: transform 0.2s ease-out;
+}
+
+
+hr{
+    opacity: 70%;
 }

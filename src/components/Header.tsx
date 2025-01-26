@@ -1,11 +1,15 @@
 import '../css/Header.css';
 
-function Header(){
+type HeaderElements = {
+    MostrarPerfil: () => void;
+}
+
+function Header({MostrarPerfil}: HeaderElements){
 
     return(
         <header>
-            <a href="">
-                <img src="/public/assets/Minha Foto.jpg" alt="" />
+            <a href="#" onClick={(e) => {e.preventDefault(); MostrarPerfil();}}>
+                <img src="/assets/Minha Foto.jpg" alt="" />
                 Clique aqui para conhecer melhor o desenvolvedor
             </a>
             <address>
