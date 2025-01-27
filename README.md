@@ -2,7 +2,12 @@
 
 <h3>O que é um portifólio?</h3>
 
-<p></p>
+<p>Um portfólio é uma coleção organizada de trabalhos, projetos ou realizações que demonstram suas habilidades, experiências e competências em uma área específica.
+Ele pode ser usado para:</p>
+
+<ol>
+  <li>djej</li>
+</ol>
 
 <hr>
 
