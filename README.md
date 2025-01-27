@@ -12,11 +12,15 @@
 
 <hr>
 
-<h2>Permissões:</h2>
+<h3>Permissões:</h3>
 
 <p>Autorizo o uso deste modelo de portifólio para qualquer pessoa usar,desde que o nome do autor original (no caso eu) seja mencionado.Isto está definido na <a href="">licença deste projeto.</a></p>
 <p>Aceito contribuições neste projeto.Serei muito grato se alguém souber React e se voluntariar.</p>
 
 <hr>
 
-<h2>Como eu uso este portifólio</h2>
+<h3>Como eu uso este portifólio?</h3>
+
+<p></p>
+
+<hr>
