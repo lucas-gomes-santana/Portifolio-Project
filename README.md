@@ -6,7 +6,7 @@
 
 <hr>
 
-<h2>O que é este repositório?</h2>
+<h3>O que é este repositório?</h3>
 
 <p>Este repositório contém um modelo de portifólio que eu mesmo criei.Por enquanto,ele está com um design simples.Mas pode receber melhorias no futuro.</p>
 
