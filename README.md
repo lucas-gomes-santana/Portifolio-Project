@@ -1,6 +1,5 @@
 <h1>Portifolio Project</h1>
 
-<br>
 
 <h3>O que é um portifólio?</h3>
 
