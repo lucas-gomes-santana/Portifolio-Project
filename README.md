@@ -9,7 +9,9 @@ Ele pode ser usado para:</p>
 
 <ol>
   <li>Mostrar habilidades e conquistas: Um portfólio é uma forma visual e prática de apresentar o que você sabe fazer, seja no contexto acadêmico, profissional ou criativo.</li>
+  
   <li>Apoiar processos de seleção: Muitas vezes, é usado em entrevistas de emprego, processos seletivos ou apresentações profissionais, permitindo que você mostre exemplos reais do seu trabalho.</li>
+  
   <li>Organizar e documentar progressos: Um portfólio também pode ser uma ferramenta pessoal para rastrear sua evolução em uma área específica.</li>
 </ol>
 
