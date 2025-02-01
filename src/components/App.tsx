@@ -7,57 +7,56 @@ import Profile from './Profile';
 import '../css/App.css';
 
 function App() {
-    const [componenteAtivo, mudarComponente] = useState('projects'); 
+    const [activeComponent, setActiveComponent] = useState('projects'); 
 
-    // Funções para alternar os componentes
-    const mostrarProjetos = () => mudarComponente('projects');
-    const mostrarPerfil = () => mudarComponente('profile');
+    // Functions to toggle components
+    const showProjects = () => setActiveComponent('projects');
+    const showProfile = () => setActiveComponent('profile');
 
     return (
         <>
-            {componenteAtivo !== 'profile' && (
+            {activeComponent !== 'profile' && (
                 <>
-                    <Header MostrarPerfil={mostrarPerfil}/>
+                    <Header ShowProfile={showProfile}/>
                 </>
             )}
             <main className="content-container">
-                {componenteAtivo === 'projects' && (
+                {activeComponent === 'projects' && (
                     <div className="projects-container">
                         <Projects
-                            imagem="/assets/Projeto-Blog.png"
-                            titulo="Projeto Site de Blog"
-                            tipoProjeto="Projeto Educacional da plataforma DIO"
-                            descricao="Projeto simples feito com o framework Angular que simula um site de blog."
+                            image="/assets/Projeto-Blog.png"
+                            title="Blog Website Project"
+                            projectType="Educational Project from DIO platform"
+                            description="A simple project made with the Angular framework that simulates a blog website."
                             link="https://github.com/lucas-gomes-santana/Simple-Blog-Page-Angular-Project"
                         />
                         <Projects
-                            imagem="/assets/Projeto-PlayStation-Store.png"
-                            titulo="Projeto PlayStation Store Clone"
-                            tipoProjeto="Projeto Educacional da plataforma DIO"
-                            descricao="Outro projeto simples feito com Angular que simula o Front-End da plataforma PlayStation Store."
+                            image="/assets/Projeto-PlayStation-Store.png"
+                            title="PlayStation Store Clone Project"
+                            projectType="Educational Project from DIO platform"
+                            description="Another simple project made with Angular that simulates the Front-End of the PlayStation Store platform."
                             link="https://github.com/lucas-gomes-santana/PlayStation-Store-Clone-Angular-Project"
                         />
                         <Projects
-                            imagem="/assets/Projeto-Pokemon-Pokedex.png"
-                            titulo="Projeto Pokedex de Pokemón"
-                            tipoProjeto="Projeto Educacional da plataforma DIO"
-                            descricao="Projeto que faz uma requisição à API da PokeAPI correspondente ao nome do pokemón que for inserido e 
-                            verificado pela parte lógica do site (Javascript ou Typescript)."
+                            image="/assets/Projeto-Pokemon-Pokedex.png"
+                            title="Pokémon Pokedex Project"
+                            projectType="Educational Project from DIO platform"
+                            description="A project that makes a request to the PokeAPI corresponding to the name of the Pokémon entered, verified by the site's logic part (JavaScript or TypeScript)."
                             link="https://github.com/lucas-gomes-santana/Projeto-Pokedex"
                         />
                         <Projects
-                            imagem='assets/Projeto-Portifolio.png'
-                            titulo='Projeto Portifolio'
-                            tipoProjeto='Projeto Pessoal'
-                            descricao='Modelo de portifólio que eu mesmo criei usando o framework React'
+                            image='assets/Projeto-Portifolio.png'
+                            title='Portfolio Project'
+                            projectType='Personal Project'
+                            description='A portfolio template that I created myself using the React framework'
                             link="http://localhost:5173/"                       
                         />
                     </div>
                 )}
-                {componenteAtivo === 'profile' && <Profile Voltar={mostrarProjetos} />}
+                {activeComponent === 'profile' && <Profile GoBack={showProjects} />}
             </main>
 
-            {componenteAtivo !== 'profile' && <Footer />}
+            {activeComponent !== 'profile' && <Footer />}
         </>
     );
 }

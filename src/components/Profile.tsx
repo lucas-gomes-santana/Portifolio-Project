@@ -2,16 +2,16 @@ import {motion} from 'framer-motion';
 import '../css/Profile.css';
 
 type ProfileElements = {
-    Voltar: () => void;
+    GoBack: () => void;
 }
 
-function Profile({Voltar}: ProfileElements){
+function Profile({GoBack}: ProfileElements){
     return(
         <div className="my-profile">
             <motion.img 
-            //Adicionando animação na minha foto usando a biblioteca framer-motion
+            // Adding animation to my photo using the framer-motion library
                 src='/assets/Minha Foto.jpg'
-                alt='Foto do desenvolvedor'
+                alt='Developer Photo'
                 animate={{y: [0,-10,0]}}
                 transition={{
                     duration: 3,
@@ -19,15 +19,14 @@ function Profile({Voltar}: ProfileElements){
                     ease: "easeInOut",
                 }}
             />
-            <h2>Algumas Informações Sobre Mim:</h2>
+            <h2>Some Information About Me:</h2>
             <p>
-                Olá,eu me chamo Lucas Gomes,tenho 17 anos.Sou estudante de uma escola na Bahia que oferece aos alunos cursos técnicos,
-                cujo ensino deles é integrado à grade curricular do ensino médio.Foi no meu primeiro ano estudando Informática que o meu 
-                interesse pela programação despertou.Desde então,eu estou estudando sobre desenvolvimento de software por conta própria e o meu
-                objetivo é me tornar um Desenvolvedor Full-Stack.
+                Hello, my name is Lucas Gomes, I am 17 years old. I am a student at a school in Bahia that offers technical courses, 
+                which are integrated with the high school curriculum. It was in my first year studying Computer Science that my interest 
+                in programming was sparked. Since then, I have been studying software development on my own, and my goal is to become a Full-Stack Developer.
             </p>
-            <p>Eu estou disponível para vagas de emprego,estágio,trainee ou serviços de freelance na área</p>
-            <a href="#" onClick={(e) => {e.preventDefault(); Voltar();}}>Voltar para a página principal</a>
+            <p>I am available for job openings, internships, trainee programs, or freelance work in the field.</p>
+            <a href="#" onClick={(e) => {e.preventDefault(); GoBack();}}>Go back to the main page</a>
         </div>
     );
 }

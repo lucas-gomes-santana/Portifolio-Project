@@ -1,24 +1,24 @@
 import '../css/Projects.css'
 
 interface ProjectsElements {
-    imagem: string;
-    titulo: string;
-    descricao: string;
+    image: string;
+    title: string;
+    description: string;
     link: string;
-    tipoProjeto: string;
+    projectType: string;
 }
 
-function Projects( {imagem,titulo,descricao,link,tipoProjeto}: ProjectsElements){
+function Projects({image, title, description, link, projectType}: ProjectsElements){
     return(
         
         <div className='project' >
 
             <div className='card-projects'>
-                <h3>{titulo}</h3>
-                <h4>{tipoProjeto}</h4>
-                <img src={imagem} alt="" />
-                <p>{descricao}</p>
-                <a rel='noopener noreferrer' target='_blank' href={link}>Clique aqui para ver o projeto</a>
+                <h3>{title}</h3>
+                <h4>{projectType}</h4>
+                <img src={image} alt="" />
+                <p>{description}</p>
+                <a rel='noopener noreferrer' target='_blank' href={link}>Click here to see the project</a>
             </div>
 
         </div>
