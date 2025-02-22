@@ -1,130 +1,26 @@
 header{
     display: flex;
     justify-content: center;
-    height: 150px;
-    margin-bottom: 30px;
-    gap: 20%;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    margin-top: 20px;
 }
 
-header img{
-    width: 90px;
-    border-radius: 20px;
+header .container-name{
+    width: 20%;
 }
 
-header a{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 3px;
-
-}
-
-header a:hover{
-    transform: scale(1.03);
-}
-
-address{
+header nav{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    width: 70%;
+    gap: 10%;
 }
 
-address p{
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    font-size: 1.1rem;
+a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
-address img{
-    width: 60px;
-}
-
-@media (max-width: 1750px) {
-
-    header{
-        gap: 15%;
-    }
-    
-    header a{
-        font-size: 1.05rem;
-    }
-
-    header img{
-        width: 75px;
-    }
-
-    address img{
-        width: 50px;
-    }
-
-    address p{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 1350px) {
-
-    header{
-        gap: 10%;
-    }
-
-    header a{
-        margin-left: 15px;
-    }
-
-    header img{
-        width: 70px;
-    }
-
-    address img{
-        width: 50px;
-    }
-}
-
-@media (max-width: 920px){
-
-    header{
-        gap: 7%;
-    }
-
-    header a{
-        font-size: 0.9rem;
-    }
-
-    header img{
-        width: 60px;
-    }
-
-    address{
-        margin-right: 10px;
-        gap: 20px;
-    }
-
-    address img{
-        width: 40px;
-    }
-
-    address p{
-        font-size: 0.85rem;
-        gap: 2px;
-    }
-}
-
-@media (max-width: 700px){
-
-    header a{
-        font-size: 0.8rem;
-    }
-    
-    header img{
-        width: 50px;
-    }
-
-    address{
-        flex-direction: column;
-    }
+.icons a i{
+    color: blue;
 }

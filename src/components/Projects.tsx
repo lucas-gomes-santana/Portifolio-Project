@@ -1,29 +1,19 @@
-import '../css/Projects.css'
+import { useNavigate } from 'react-router-dom';
 
-interface ProjectsElements {
-    image: string;
-    title: string;
-    description: string;
-    link: string;
-    projectType: string;
-}
+import '../css/Projects.css';
 
-function Projects({image, title, description, link, projectType}: ProjectsElements){
-    return(
-        
-        <div className='project' >
+function Projects(){
 
-            <div className='card-projects'>
-                <h3>{title}</h3>
-                <h4>{projectType}</h4>
-                <img src={image} alt="" />
-                <p>{description}</p>
-                <a rel='noopener noreferrer' target='_blank' href={link}>Click here to see the project</a>
-            </div>
+    const navigate = useNavigate();
 
-        </div>
-    
+    return (
+        <section>
+            <h2>My Projects:</h2>
+
+            <button onClick={() => navigate(-1)}>Return to Main Page</button>
+        </section>
     );
+
 }
 
 export default Projects;
