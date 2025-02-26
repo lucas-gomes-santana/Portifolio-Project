@@ -24,7 +24,7 @@
     border-radius: 50%;
     border: 3px solid red;
     position: absolute;
-    animation: subirDescer 4.5s ease-in-out infinite;
+    animation: subirDescer 4s ease-in-out infinite;
 }
   
 
@@ -33,7 +33,7 @@
         transform: translateY(0px);
     }
     50%{
-        transform: translateY(-7px);
+        transform: translateY(-12px);
     }
     100%{
         transform: translateY(0px);
