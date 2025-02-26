@@ -3,22 +3,23 @@
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin-top: 160px;
+    margin-top: 130px;
     margin-left: 5%;
 }
 
 .my-foto {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
-    width: 350px;
-    height: 350px;
+    width: 370px;
+    height: 390px;
 }
   
 #animated-foto {
     width: 90%;
-    height: 90%;
+    height: 85%;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid red;
