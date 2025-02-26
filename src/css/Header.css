@@ -55,10 +55,15 @@ a:hover{
     }
 
     .container-name h3{
-        font-size: 0.75rem;
+        font-size: 0.65rem;
+    }
+
+    header .container-links{
+        gap: 5%;
+        width: 65%;
     }
 
     header .container-links a{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
