@@ -4,11 +4,11 @@ import '../css/Profile.css';
 
 function Profile(){
 
-    const [role,setRole] = useState('Student');
+    const [role,setRole] = useState('IT Student');
     
     useEffect(() => {
         const interval = setInterval(() => {
-            setRole((prevRole) => (prevRole === 'Student' ? 'Full Stack developer' : 'Student'));
+            setRole((prevRole) => (prevRole === 'IT Student' ? 'Full-Stack developer' : 'IT Student'));
         }, 4000);
 
         return () => clearInterval(interval);
