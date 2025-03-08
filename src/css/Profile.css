@@ -59,7 +59,7 @@
 }
 
 #special-word{
-    color: rgb(209, 74, 17);
+    color: green;
 }
 
 .personal-info h3,p{
@@ -73,7 +73,7 @@
     margin-top: 20px;
 }
 
-.container-personal-icons a i{
+.container-personal-icons .special-link i{
     border: 1px solid;
     padding: 12px;
     border-radius: 50%;

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './Header.tsx';
 import Profile from './Profile.tsx';
@@ -9,10 +9,9 @@ import Contacts from './Contacts.tsx';
 import '../css/App.css';
 
 function App() {
-
     const projectsData = [
         {
-            title: "On-Line School System",
+            title: "School System Management Project",
             image: "/assets/School-System-Project.png",
             projectType: "Personal Project",
             link: "https://github.com/lucas-gomes-santana/School-System-Project",
@@ -24,7 +23,6 @@ function App() {
         <Router>
             <Header/>
             <Routes>
-
                 <Route path='/' element={<Profile/>}/>
                 <Route path='/projects' element={ <Projects projects={projectsData}/> } />
                 <Route path='/skills' element={<Skills/>}/>

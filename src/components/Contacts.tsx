@@ -17,9 +17,7 @@ function Contacts() {
     return (
         <section className='main-container'>
             <h2>Contact Me</h2>
-
             <h3>Feel free to send me a message using the form below:</h3>
-
             <form onSubmit={handleSubmit} className="contact-form">
                 <label>
                     Subject:
@@ -31,8 +29,7 @@ function Contacts() {
                 </label>
                 <button type="submit">Send Email</button>
             </form>
-
-            <button className='return-button' onClick={() => navigate(-1)}>Return to Previous Page</button>
+            <button className='return-button' onClick={() => navigate('/')}>Return to Home Page</button>
         </section>
     );
 }
