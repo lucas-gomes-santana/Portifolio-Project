@@ -22,6 +22,7 @@ function Skills() {
                     <img src="https://cdn.iconscout.com/icon/free/png-256/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png"/>
                     <img src="https://www.techmonitor.ai/wp-content/uploads/sites/29/2016/06/SQL.png"/>
                     <img src="https://cdn.intuji.com/2023/10/MySQL.png" />
+                    <img src="https://www.zadara.com/wp-content/uploads/docker.png" />
                 </div>
             </div>
             <button className='return-button' onClick={() => navigate('/')}>Return to Home Page</button>
