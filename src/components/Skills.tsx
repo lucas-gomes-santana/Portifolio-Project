@@ -6,9 +6,9 @@ function Skills() {
 
     return (
         <section className='main-container-2'>
-            <h3>Here, you can see my skills with programming languages, frameworks, and other programming tools.</h3>
+            <h3>This is where I showcase Software Development technologies and tools that I use or have had contact with .</h3>
             <div className="container-skills">
-                <h2>Technologies I use and can work with:</h2>
+                <h2>Technologies I use or had contact and can work with:</h2>
                 <div className="container-images">
                     <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/html5/html5-original.svg"/>
                     <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/65dea6c4eaca7da319e552c09f4cf5a9a8dab2c8/icons/CSS.svg"/>
