@@ -12,7 +12,7 @@ function App() {
     const projectsData = [
         {
             title: "School System Management Project",
-            projectVideo: "/assets/School-System-Project.mp4",
+            projectVideo: "/assets/School-System-Project.webm",
             projectType: "Personal Project",
             link: "https://github.com/lucas-gomes-santana/School-System-Project",
             description: "A School Environment Management System that aims to become a CRUD application in the future, being able to record grades, attendance and observations about students in a school, and also to register teachers in the system. The main idea here is that each school has a system of this model for itself, bringing lightness and simplicity to the teacher when working with information about their students. Go to my GitHub profile for more informations",
