@@ -108,6 +108,7 @@
 
     .container-info{
         flex-direction: column;
+        margin-top: 100px;
     }
 
 }

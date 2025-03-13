@@ -2,6 +2,17 @@
     margin-top: 120px;
 }
 
+.main-container h4{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.main-container h4 i{
+    color: rgb(218, 235, 32);
+    font-size: 30px;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -36,11 +47,20 @@
 
 @media (max-width:600px){
     .main-container h3{
-        font-size: 1rem;
+        width: 80%;
+        font-size: 0.9rem;
     }
 
     .main-container h2{
         font-size: 1.2rem;
+    }
+
+    .main-container h4{
+        font-size: 0.8rem;
+    }
+
+    .main-container h4 i{
+        font-size: 25px;
     }
 
     .contact-form{
@@ -52,7 +72,7 @@
     }
 }
 
-@media (max-width:470px){
+@media (max-width:480px){
     .main-container{
         margin-top: 100px;
     }
@@ -63,6 +83,17 @@
 
     .main-container h2{
         font-size: 1.1rem;
+    }
+
+    .main-container h4{
+        width: 80%;
+    }
+
+    .main-container h4 i{
+        position: absolute;
+        font-size: 18px;
+        margin-left: 30%;
+        margin-top: 5%;
     }
 
     .contact-form{

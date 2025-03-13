@@ -18,7 +18,7 @@ function Profile(){
         <section className='container-info'>
 
             <div className="my-foto">
-                <img id='animated-foto' src="/assets/Minha-Foto.jpg" alt="" />
+                <img id='animated-foto' src="/assets/My-Foto.jpg" alt="" />
             </div> 
 
             <div className="my-info">
@@ -27,7 +27,8 @@ function Profile(){
                     <h3>Hi!My name is Lucas.I'm a <span id='special-word'>{role}.</span> </h3>
                     <p>
                         I'm a brazilian high school student who loves technologies tools and who is constant wiling to learn more and more
-                        about the software deveploment area.
+                        about the software deveploment area. <br />
+                        I am open to internship, trainee or junior developer positions.
                     </p>
                 </div>
 

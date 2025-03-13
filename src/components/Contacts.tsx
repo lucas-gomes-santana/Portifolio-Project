@@ -17,7 +17,7 @@ function Contacts() {
     return (
         <section className='main-container'>
             <h2>Contact Me</h2>
-            <h3>Feel free to send me a message using the form below:</h3>
+            <h3>Feel free to send me a E-mail message using the form below:</h3>
             <form onSubmit={handleSubmit} className="contact-form">
                 <label>
                     Subject:
@@ -29,6 +29,9 @@ function Contacts() {
                 </label>
                 <button type="submit">Send Email</button>
             </form>
+
+            <h4>Or you can contact me using this number: +55 (75) 99245-9695 <i className='fa-solid fa-phone'></i></h4>
+
             <button className='return-button' onClick={() => navigate('/')}>Return to Home Page</button>
         </section>
     );

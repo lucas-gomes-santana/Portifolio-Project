@@ -28,7 +28,15 @@
     width: 60%;
 }
 
-.card-projects img{
+.card-projects h3{
+    color: rgb(210, 224, 85);
+}
+
+.card-projects h4{
+    color: rgb(57, 219, 100);
+}
+
+.card-projects .projects-video{
     width: 90%;
 }
 
