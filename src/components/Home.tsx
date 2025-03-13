@@ -1,8 +1,8 @@
 import { useState,useEffect } from 'react';
 
-import '../css/Profile.css';
+import '../css/Home.css';
 
-function Profile(){
+function Home(){
 
     const [role,setRole] = useState('IT Student');
     
@@ -48,4 +48,4 @@ function Profile(){
     );
 }
 
-export default Profile;
+export default Home;
