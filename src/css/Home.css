@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     gap: 25px;
-    margin-top: 130px;
+    margin-top: 200px;
+    width: 90%;
     margin-left: 5%;
 }
 
@@ -24,11 +25,11 @@
     border-radius: 50%;
     border: 3px solid red;
     position: absolute;
-    animation: subirDescer 4s ease-in-out infinite;
+    animation: upAndDown 4s ease-in-out infinite;
 }
   
 
-@keyframes subirDescer{
+@keyframes upAndDown{
     0%{
         transform: translateY(0px);
     }

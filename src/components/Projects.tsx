@@ -10,13 +10,24 @@ interface ProjectElements{
     textLink:string;
 }
 
-function Projects({ projects }: { projects: ProjectElements[] }) {
+function Projects() {
+    const projectsData: ProjectElements[] = [
+        {
+            title: "PeuCar Automotives Workshop Website",
+            projectImage: "/assets/PeuCar-Website.png",
+            projectType: "Freelance Web Application",
+            link: "https://peucar-automotivos-ipira.vercel.app/",
+            description: "A freelance project that i developed for a small car workshop bussines. It's a simple website that allows the user see about the services of the workshop and also sent a E-mail message directly to the owner on website.",
+            currentState: "Completed",
+            textLink: "Go to the Website",
+        },
+    ];
 
     return (
         <section className='main-container'>
             <h2>My Projects:</h2>
             <div className="project-container">
-                {projects.map((project, index) => (
+                {projectsData.map((project, index) => (
                     <div className="card-projects" key={ index }>
                         <h3>{project.title}</h3>
                         <h4>{project.projectType}</h4>

@@ -1,21 +1,23 @@
 header{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 header .container-name{
     width: 30%;
-    margin-left: 10%;
+    margin-left: 6%;
 }
 
 header .container-links{
     display: flex;
     justify-content: center;
     width: 70%;
-    gap: 10%;
 }
 
+header .container-links a {
+    margin-left: 13%;
+}
 
 @media (max-width:820px){
 
