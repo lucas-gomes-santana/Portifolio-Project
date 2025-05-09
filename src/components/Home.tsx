@@ -33,7 +33,7 @@ function Home(){
                 </div>
 
                 <nav className='container-personal-icons'>
-                    <h4>Check my Linkedin and GitHub:</h4>
+                    <h4>Linkedin and GitHub:</h4>
 
                     <a className='special-link' target='_blank' rel='noopener noreferrer' href="https://www.linkedin.com/in/lucas-gomes-santana-77892a343/">
                       <i className='fa-brands fa-linkedin'> </i> 

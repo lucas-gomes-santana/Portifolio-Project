@@ -1,12 +1,10 @@
-import { useNavigate } from 'react-router-dom';
 import '../css/Contacts.css';
 
 function Contacts() {
-    const navigate = useNavigate();
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const formData = new FormData(e.currentTarget);
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
         const subject = formData.get('subject') as string;
         const message = formData.get('message') as string;
 
@@ -17,7 +15,9 @@ function Contacts() {
     return (
         <section className='main-container'>
             <h2>Contact Me</h2>
+
             <h3>Feel free to send me a E-mail message using the form below:</h3>
+            
             <form onSubmit={handleSubmit} className="contact-form">
                 <label>
                     Subject:
@@ -32,7 +32,6 @@ function Contacts() {
 
             <h4>Or you can contact me using this number: +55 (75) 99245-9695 <i className='fa-solid fa-phone'></i></h4>
 
-            <button className='return-button' onClick={() => navigate('/')}>Return to Home Page</button>
         </section>
     );
 }

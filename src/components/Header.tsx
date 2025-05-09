@@ -12,9 +12,10 @@ function Header() {
             </div>
 
             <nav className='container-links'>
-                <Link to="/projects">My Projects</Link>
+                <Link to="/home">Home</Link>
+                <Link to="/projects">Projects</Link>
                 <Link to="/contacts">Contact Me</Link>
-                <Link to="/skills">My Skills</Link>     
+                <Link to="/skills">Skills</Link>     
             </nav>
 
         </header>

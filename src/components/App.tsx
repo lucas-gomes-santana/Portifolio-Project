@@ -11,20 +11,21 @@ import '../css/App.css';
 function App() {
     const projectsData = [
         {
-            title: "School System Management Project",
-            projectVideo: "/assets/School System Project Recording.webm",
-            projectType: "Personal Project",
-            link: "https://github.com/lucas-gomes-santana/School-System-Project",
-            description: "A School Environment Management System that aims to become a CRUD application in the future, being able to record grades, attendance and observations about students in a school, and also to register teachers in the system. The main idea here is that each school has a system of this model for itself, bringing lightness and simplicity to the teacher when working with information about their students. Go to my GitHub profile for more informations",
-            currentState: "In Development",
+            title: "PeuCar Automotives Website",
+            projectImage: "/public/assets/PeuCar-Website.png",
+            projectType: "Freelance Web Application",
+            link: "https://peucar-automotivos-ipira.vercel.app/",
+            description: "A freelance project that i developed for a small car workshop bussines. It's a simple website that allows the user see about the services of the workshop and also sent a E-mail message directly to the owner on website.",
+            currentState: "Completed",
+            textLink: "Go to the Website",
         },
-    ];
+    ]
 
     return (
         <Router>
             <Header/>
             <Routes>
-                <Route path='/' element={<Home/>}/>
+                <Route path='/home' element={<Home/>}/>
                 <Route path='/projects' element={ <Projects projects={projectsData}/> } />
                 <Route path='/skills' element={<Skills/>}/>
                 <Route path='/contacts' element={ <Contacts/> }/>

@@ -1,17 +1,16 @@
-import { useNavigate } from "react-router-dom";
 import '../css/Projects.css';
 
 interface ProjectElements{
-    projectVideo:string;
+    projectImage:string;
     title:string;
     description:string;
     projectType:string;
     link:string;
     currentState:string;
+    textLink:string;
 }
 
 function Projects({ projects }: { projects: ProjectElements[] }) {
-    const navigate = useNavigate();
 
     return (
         <section className='main-container'>
@@ -22,13 +21,12 @@ function Projects({ projects }: { projects: ProjectElements[] }) {
                         <h3>{project.title}</h3>
                         <h4>{project.projectType}</h4>
                         <h4>Current State: {project.currentState} </h4>
-                        <video className="projects-video" src={project.projectVideo} controls></video>
+                        <img className="projects-video" src={project.projectImage}></img>
                         <p>{project.description}</p>
-                        <a rel='noopener noreferrer' target='_blank' href={project.link}>Get the Source Code</a>
+                        <a rel='noopener noreferrer' target='_blank' href={project.link}>{project.textLink}</a>
                     </div>
                 ))}
             </div>
-            <button className='return-button' onClick={() => navigate('/')}>Return to Home Page</button>
         </section>
     );
 }
