@@ -83,6 +83,7 @@
 }
 
 
+/*Responsivity*/
 @media (max-width:1000px) {
     .container-info {
         flex-direction: column;

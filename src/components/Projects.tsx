@@ -26,18 +26,22 @@ function Projects() {
     return (
         <section className='main-container'>
             <h2>My Projects:</h2>
+
             <div className="project-container">
                 {projectsData.map((project, index) => (
+
                     <div className="card-projects" key={ index }>
                         <h3>{project.title}</h3>
                         <h4>{project.projectType}</h4>
                         <h4>Current State: {project.currentState} </h4>
-                        <img className="projects-video" src={project.projectImage}></img>
+                        <img className="projects-image" src={project.projectImage}></img>
                         <p>{project.description}</p>
                         <a rel='noopener noreferrer' target='_blank' href={project.link}>{project.textLink}</a>
                     </div>
                 ))}
+
             </div>
+
         </section>
     );
 }

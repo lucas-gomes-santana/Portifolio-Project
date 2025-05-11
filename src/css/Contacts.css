@@ -45,6 +45,8 @@
 }
 
 
+
+/*Responsivity*/
 @media (max-width:600px){
     .main-container h3{
         width: 80%;

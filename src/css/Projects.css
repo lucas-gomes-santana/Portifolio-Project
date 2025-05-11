@@ -1,26 +1,26 @@
-.main-container{
+.main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
 }
 
-.project-container{
+.project-container {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.project-container a{
+.project-container a {
     margin-top: 20px;
 }
 
-.main-container h2{
+.main-container h2 {
     margin-bottom: 40px;
 }
 
-.card-projects{
+.card-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,57 +28,64 @@
     width: 60%;
 }
 
-.card-projects h3{
+.card-projects h3 {
     color: rgb(210, 224, 85);
 }
 
-.card-projects h4{
+.card-projects h4 {
     color: rgb(57, 219, 100);
 }
 
-.card-projects .projects-video{
+.card-projects .projects-image {
     width: 90%;
+    border-radius: 15px;
+    border: 3px solid rgb(214, 145, 16);
+}
+
+.card-projects a {
+    margin-bottom: 40px;
 }
 
 
 
-@media (max-width:700px){
+/*Responsivity*/
+@media (max-width:700px) {
 
-    .main-container h2{
+    .main-container h2 {
         font-size: 1.3rem;
     }
 
-    .main-container button{
+    .main-container button {
         font-size: 0.85rem;
     }
 }
 
-@media (max-width:500px){
+@media (max-width:500px) {
 
-    .card-projects{
+    .card-projects {
         width: 80%;
     }
 
-    .card-projects h3{
+    .card-projects h3 {
         font-size: 1rem;
     }
 
-    .card-projects h4{
+    .card-projects h4 {
         font-size: 0.9rem;
     }
 
-    .card-projects p{
+    .card-projects p {
         font-size: 0.85rem;
     }
 
-    .card-projects a{
+    .card-projects a {
         font-size: 0.85rem;
     }
 }
 
-@media (max-width:400px){
+@media (max-width:400px) {
 
-    .card-projects p{
+    .card-projects p { 
         font-size: 0.75rem;
     }
 }

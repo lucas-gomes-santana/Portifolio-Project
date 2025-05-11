@@ -18,12 +18,12 @@ header .container-links {
     justify-content: center;
     align-items: center;
     width: 70%;
-    gap: 2rem;
     transition: all 0.3s;
 }
 
 header .container-links a {
-    margin-left: 13%;
+    margin-left: 12%;
+    font-size: 1.1rem;
 }
 
 .hamburger-menu {
@@ -31,6 +31,7 @@ header .container-links a {
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .bar {
@@ -55,7 +56,7 @@ header .container-links a {
 
 
 
-/*Responsividade*/
+/*Responsivity*/
 @media (max-width:1000px) {
     header .container-name {
         width: 40%;
@@ -109,6 +110,7 @@ header .container-links a {
         flex-direction: column;
         align-items: flex-end;
         z-index: 10;
+        margin-top: 20px;
     }
 
     header .container-links.show {
@@ -118,6 +120,7 @@ header .container-links a {
 
     header .container-links a {
         margin-right: 30px;
+        margin-top: 30px;
     }
 
     header .container-name {
@@ -129,5 +132,15 @@ header .container-links a {
     header .container-links.show a {
         font-size: 0.8rem;
     }
-    
+}
+
+@media (max-width:400px) {
+    header .container-links a {
+        margin-right: 15px;
+    }
+
+    .hamburger-menu {
+        top: 25%;
+        z-index: 10;
+    }
 }

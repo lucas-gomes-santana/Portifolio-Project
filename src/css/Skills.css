@@ -30,6 +30,8 @@
 }
 
 
+
+/*Responsivity*/
 @media (max-width:1000px){
     .main-container-2 h3{
         font-size: 0.9rem;
