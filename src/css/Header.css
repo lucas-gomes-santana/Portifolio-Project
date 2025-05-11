@@ -1,65 +1,133 @@
-header{
+header {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    position: relative;
 }
 
-header .container-name{
+header .container-name {
     width: 30%;
-    margin-left: 6%;
 }
 
-header .container-links{
+header .container-name h3 {
+    margin-left: 10%;
+}
+
+header .container-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 70%;
+    gap: 2rem;
+    transition: all 0.3s;
 }
 
 header .container-links a {
     margin-left: 13%;
 }
 
-@media (max-width:820px){
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
 
-    .container-name h3{
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.bar.active:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.active:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.active:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+/*Responsividade*/
+@media (max-width:1000px) {
+    header .container-name {
+        width: 40%;
+    }
+
+    header .container-name h3{
         font-size: 1rem;
+    }
+
+    header .container-links {
+        width: 60%;
+    }
+
+    header .container-links a {
+        margin-left: 3%;
     }
 }
 
-@media (max-width:720px){
-
-    header .container-name{
-        width: 40%;
-        margin-left: 5%;
+@media (max-width:730px) {
+    header .container-name h3 {
+        font-size: 0.9rem;
     }
 
-    .container-name h3{
-        font-size: 0.85rem;
-    }
-
-    header .container-links{
-        width: 60%;
-        gap: 7%;
+    header .container-links a{
         font-size: 0.9rem;
     }
 }
 
-@media (max-width:470px){
-
-    header .container-name{
-        width: 35%;
+@media (max-width: 640px) {
+    header {
+        justify-content: flex-start;
+        margin-top: 25px;
     }
 
-    .container-name h3{
-        font-size: 0.65rem;
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 20;
     }
 
-    header .container-links{
-        gap: 5%;
-        width: 65%;
+    header .container-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: auto;
+        width: auto;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 10;
     }
 
-    header .container-links a{
-        font-size: 0.7rem;
+    header .container-links.show {
+        display: flex;
+        width: 30%;
     }
+
+    header .container-links a {
+        margin-right: 30px;
+    }
+
+    header .container-name {
+        width: 30%;
+    }
+}
+
+@media (max-width:520px) {
+    header .container-links.show a {
+        font-size: 0.8rem;
+    }
+    
 }
