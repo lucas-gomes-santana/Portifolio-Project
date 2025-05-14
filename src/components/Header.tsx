@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Home from './Home.tsx';
 import Projects from './Projects.tsx';
 import Skills from './Skills.tsx';
-import Contacts from './Contacts.tsx';
+import { Contacts } from './Contacts.tsx';
 
 import '../css/Header.css';
 
