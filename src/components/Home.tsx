@@ -1,19 +1,8 @@
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
+import { TypeAnimation } from 'react-type-animation';
 import '../css/Home.css';
 
 function Home() {
-    const [role, setRole] = useState('IT Student');
-    
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setRole((prevRole) => (prevRole === 'IT Student' ? 'Full-Stack developer' : 'IT Student'));
-        }, 4000);
-
-        return () => clearInterval(interval);
-    }, []);
-
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -67,17 +56,27 @@ function Home() {
                         Hi! My name is Lucas Gomes Santana. I'm a{' '}
                         <motion.span 
                             id='special-word'
-                            animate={{ 
-                                opacity: [1, 0.5, 1],
-                                scale: [1, 1.1, 1]
+                            animate={{
+                                opacity: [1]
                             }}
                             transition={{ 
-                                duration: 2,
+                                duration: 3,
                                 repeat: Infinity,
                                 repeatType: "reverse"
                             }}
                         >
-                            {role}.
+                            <TypeAnimation
+                                sequence={[
+                                    'IT Student',
+                                    2000,
+                                    'Full-Stack Developer',
+                                    2000,
+                                ]}
+                                wrapper="span"
+                                speed={50}
+                                repeat={Infinity}
+                                cursor={true}
+                            />
                         </motion.span>
                     </h3>
                     <motion.p variants={itemVariants}>

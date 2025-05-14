@@ -40,6 +40,20 @@
 #special-word {
     color: #007bff;
     font-weight: bold;
+    display: inline-block;
+    min-width: 200px;
+    text-align: left;
+}
+
+/* Estilo para o cursor de digitação */
+#special-word span {
+    border-right: 2px solid #007bff;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #007bff; }
 }
 
 .personal-info p {
@@ -119,7 +133,6 @@
         flex-direction: column;
         margin-top: 100px;
     }
-
 }
 
 @media (max-width:730px) {
@@ -141,6 +154,10 @@
         font-size: 0.8rem;
     }
 
+    #special-word {
+        min-width: 150px;
+    }
+
     .container-personal-icons {
         gap: 0;
     }
@@ -156,5 +173,7 @@
 }
 
 @media (max-width:490px) {
-    
+    #special-word {
+        min-width: 120px;
+    }
 }
