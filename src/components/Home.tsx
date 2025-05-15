@@ -54,12 +54,16 @@ function Home() {
                             <TypeAnimation {...typeAnimationConfig} />
                         </motion.span>
                     </h3>
+
                     <motion.p variants={itemVariants}>
-                        Olá, sou Lucas Gomes Santana, sou um desenvolvedor de aplicações web em treinamento, estou buscando minha primeira oportunidade na área de tecnologia.
+                        Sou um desenvolvedor Full-Stack de aplicações web em treinamento, estou buscando minha primeira oportunidade na área de tecnologia. Trabalho com sites, 
+                        landing pages e APIs Restful.
                     </motion.p>
+
                     <motion.p variants={itemVariants}>
-                        Estou aberto a oportunidades de estágio, trainee ou desenvolvedor júnior.
+                        Estou aberto a vagas de estágio, trainee ou desenvolvedor júnior.
                     </motion.p>
+                    
                 </motion.div>
 
                 <motion.nav 

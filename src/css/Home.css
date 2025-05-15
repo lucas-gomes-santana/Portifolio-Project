@@ -6,14 +6,27 @@
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 220px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .my-foto {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: float 4s ease-in-out infinite;
 }
 
 #animated-foto {
@@ -38,55 +51,41 @@
 }
 
 #special-word {
-    color: #007bff;
+    color: #e419d3;
     font-weight: bold;
     display: inline-block;
     min-width: 200px;
     text-align: left;
 }
 
-/* Estilo para o cursor de digitação */
-#special-word span {
-    border-right: 2px solid #007bff;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: #007bff; }
-}
-
 .personal-info p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
-    color: #666;
+    color: #b5b1b1;
 }
 
 .container-personal-icons {
     margin-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .container-personal-icons h4 {
     margin-bottom: 1rem;
-    color: #333;
+    color: #6d6d6d;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 30px;
 }
 
-.special-link {
+.special-link i {
     font-size: 2rem;
-    color: #333;
     text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.special-link:hover {
-    color: #007bff;
 }
 
 /* Animações responsivas */
@@ -104,27 +103,22 @@
 }
 
 /*Responsivity*/
-@media (max-width:1000px) {
+@media (max-width:1100px) {
     .container-info {
+        gap: 1rem;
+        width: 98%;
+        margin-left: 1%;
         flex-direction: column;
-        gap: 0;
-        width: 100%;
-        margin-left: 0;
+        align-items: center;
+        margin-top: 150px;
     }
 
-    .my-foto {
-        width: 320px;
-        height: 320px;
+    .personal-info h3 {
+        font-size: 1.2rem;
     }
 
-    #animated-foto{ 
-        width: 80%;
-        height: 80%;
-    }
-
-    .my-info {
-        width: 70%;
-        margin-right: 20px;
+    #special-word {
+        display: inline;
     }
 }
 
@@ -138,42 +132,59 @@
 @media (max-width:730px) {
     .container-info {
         gap: 10px;
+        width: 100%;
+        margin-left: 0;
     }
 
     .my-foto {
-        width: 225px;
-        height: 225px;
+        width: 180px;
+        height: 180px;
     }
 
     .my-info {
-        width: 90%;
+        width: 96%;
         gap: 0;
+        margin-left: 2%;
     }
 
-    .personal-info h3,p {
-        font-size: 0.8rem;
+    .personal-info h3 {
+        font-size: 1rem;
+    }
+
+    .personal-info p {
+        font-size: 0.9rem;
     }
 
     #special-word {
         min-width: 150px;
-    }
-
-    .container-personal-icons {
-        gap: 0;
-    }
-
-    .container-personal-icons h4 {
-        font-size: 0.8rem;
-    }
-
-    .container-personal-icons .special-link i {
-        padding: 7px;
-        margin-left: 10px;
-    }
+    } 
+    
 }
 
 @media (max-width:490px) {
-    #special-word {
-        min-width: 120px;
+    .container-info {
+        margin-top: 80px;
+    }
+
+    .my-foto {
+        width: 140px;
+        height: 140px;
+    }
+
+    .my-info {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container-personal-icons {
+        gap: 10px;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
+
+    .special-link i {
+        font-size: 1.5rem;
     }
 }

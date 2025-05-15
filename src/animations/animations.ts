@@ -90,9 +90,9 @@ export const cardVariants: Variants = {
 // Configurações para o TypeAnimation
 export const typeAnimationConfig = {
     sequence: [
-        'Estudante de Informática',
+        'Estudante de Informática.',
         3000,
-        'Desenvolvedor Full-Stack',
+        'Desenvolvedor Full-Stack.',
         3000,
     ],
     repeat: Infinity,
