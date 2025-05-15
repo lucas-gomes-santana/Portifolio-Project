@@ -93,6 +93,7 @@ function Home() {
                     variants={itemVariants}
                 >
                     <h4>My Linkedin and GitHub:</h4>
+
                     <motion.div className="social-links">
                         <motion.a 
                             className='special-link' 
@@ -104,6 +105,7 @@ function Home() {
                         >
                             <i className='fa-brands fa-linkedin'></i> 
                         </motion.a>
+
                         <motion.a 
                             className='special-link' 
                             target='_blank' 
@@ -114,9 +116,13 @@ function Home() {
                         >
                             <i className='fa-brands fa-github'></i> 
                         </motion.a>
+
                     </motion.div>
+
                 </motion.nav>
+
             </motion.div>
+            
         </motion.section>
     );
 }
