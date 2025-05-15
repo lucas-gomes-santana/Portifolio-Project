@@ -41,9 +41,9 @@ function Header() {
 
                 <nav className={`container-links ${isMenuOpen ? 'show' : ''}`}>
                     <Link to="/home" onClick={() => setIsMenuOpen(false)}>Home</Link>
-                    <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projects</Link>
-                    <Link to="/contacts" onClick={() => setIsMenuOpen(false)}>Contact Me</Link>
-                    <Link to="/skills" onClick={() => setIsMenuOpen(false)}>Skills</Link>     
+                    <Link to="/projects" onClick={() => setIsMenuOpen(false)}>Projetos</Link>
+                    <Link to="/contacts" onClick={() => setIsMenuOpen(false)}>Fale Comigo</Link>
+                    <Link to="/skills" onClick={() => setIsMenuOpen(false)}>Habilidades</Link>     
                 </nav>
             </header>
 

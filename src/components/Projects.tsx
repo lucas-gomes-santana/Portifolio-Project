@@ -34,12 +34,12 @@ function Projects() {
 
     const projectsData: ProjectElements[] = [
         {
-            title: "PeuCar Automotives Workshop Website",
+            title: "Site da PeuCar Automotivos",
             projectImage: "/assets/PeuCar-Website.png",
-            projectType: "Freelance Web Application",
+            projectType: "Aplicação Web",
             link: "https://peucar-automotivos-ipira.vercel.app/",
-            description: "A freelance project that i developed for a small car workshop bussines. It's a simple website that allows the user see about the services of the workshop and also sent a E-mail message directly to the owner on website.",
-            textLink: "Go to the Website",
+            description: "Um projeto freelance que desenvolvi para um pequeno negócio de oficina de automóveis. Consiste em um site simples que permite ao usuário ver sobre os serviços da oficina e também enviar uma mensagem diretamente para o Email do proprietário da oficina.",
+            textLink: "Ir para o Site",
         },
     ];
 
@@ -50,7 +50,7 @@ function Projects() {
             animate="visible"
             variants={containerVariants}
         >
-            <h2>My Projects:</h2>
+            <h2>Projetos Desenvolvidos:</h2>
 
             <motion.div className="project-container" variants={itemVariants} >
                 {projectsData.map((project, index) => (

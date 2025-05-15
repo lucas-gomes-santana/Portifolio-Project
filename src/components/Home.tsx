@@ -1,29 +1,15 @@
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
+import { 
+    containerVariants, 
+    itemVariants, 
+    imageVariants, 
+    buttonVariants,
+    typeAnimationConfig 
+} from '../animations/animations';
 import '../css/Home.css';
 
 function Home() {
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.5
-            }
-        }
-    };
-
-    const itemVariants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 1.1
-            }
-        }
-    };
-
     return (
         <motion.section 
             className='container-info'
@@ -39,8 +25,8 @@ function Home() {
                     id='animated-foto' 
                     src="/assets/My-Foto.png" 
                     alt="Lucas Gomes Santana Foto"
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
+                    variants={imageVariants}
+                    whileHover="hover"
                 />
             </motion.div> 
 
@@ -53,10 +39,10 @@ function Home() {
                     variants={itemVariants}
                 >
                     <h3>
-                        Hi! My name is Lucas Gomes Santana. I'm a{' '}
+                        Olá! Meu nome é Lucas Gomes Santana. Eu sou um{' '}
                         <motion.span 
                             id='special-word'
-                            animate={{
+                            animate={{ 
                                 opacity: [1]
                             }}
                             transition={{ 
@@ -65,26 +51,14 @@ function Home() {
                                 repeatType: "reverse"
                             }}
                         >
-                            <TypeAnimation
-                                sequence={[
-                                    'IT Student',
-                                    2000,
-                                    'Full-Stack Developer',
-                                    2000,
-                                ]}
-                                wrapper="span"
-                                speed={50}
-                                repeat={Infinity}
-                                cursor={true}
-                            />
+                            <TypeAnimation {...typeAnimationConfig} />
                         </motion.span>
                     </h3>
                     <motion.p variants={itemVariants}>
-                        I'm a high school student who loves technologies tools and who is constant wiling to learn more and more
-                        about the software deveploment area. 
+                        Olá, sou Lucas Gomes Santana, sou um desenvolvedor de aplicações web em treinamento, estou buscando minha primeira oportunidade na área de tecnologia.
                     </motion.p>
                     <motion.p variants={itemVariants}>
-                        I am open to internship, trainee or junior developer positions.
+                        Estou aberto a oportunidades de estágio, trainee ou desenvolvedor júnior.
                     </motion.p>
                 </motion.div>
 
@@ -92,27 +66,27 @@ function Home() {
                     className='container-personal-icons'
                     variants={itemVariants}
                 >
-                    <h4>My Linkedin and GitHub:</h4>
-
+                    <h4>Meu Linkedin e GitHub:</h4>
                     <motion.div className="social-links">
                         <motion.a 
                             className='special-link' 
                             target='_blank' 
                             rel='noopener noreferrer' 
                             href="https://www.linkedin.com/in/lucas-gomes-santana-77892a343/"
-                            whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 0.9 }}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                            whileTap="tap"
                         >
                             <i className='fa-brands fa-linkedin'></i> 
                         </motion.a>
-
                         <motion.a 
                             className='special-link' 
                             target='_blank' 
                             rel='noopener noreferrer' 
                             href="https://github.com/lucas-gomes-santana"
-                            whileHover={{ scale: 1.2 }}
-                            whileTap={{ scale: 0.9 }}
+                            variants={buttonVariants}
+                            whileHover="hover"
+                            whileTap="tap"
                         >
                             <i className='fa-brands fa-github'></i> 
                         </motion.a>
@@ -122,7 +96,7 @@ function Home() {
                 </motion.nav>
 
             </motion.div>
-            
+
         </motion.section>
     );
 }

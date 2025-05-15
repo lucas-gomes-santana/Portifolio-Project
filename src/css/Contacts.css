@@ -1,0 +1,50 @@
+.contacts-container {
+    display: flex;
+    margin-top: 180px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-container h2 {
+    font-size: 1.4rem;
+    color: yellow;
+    margin-right: 40px;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contacts-form button {
+    cursor: pointer;
+    background-color: rgb(77, 214, 184);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 30%;
+    
+}
+
+.container-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts-form textarea { 
+    border: 2px solid rgb(77, 214, 184);
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    min-width: 470px;
+    min-height: 150px;
+}
+
+.container-input input {
+    border: 2px solid rgb(84, 183, 118);
+    border-radius: 10px;
+    padding: 7px;
+}
