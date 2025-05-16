@@ -158,7 +158,7 @@ export function Contacts() {
               
               <div style={{alignItems: 'flex-start'}} className="container-input">
                 <p>Sua Mensagem:</p> 
-                <textarea className='text-container'
+                <textarea
                     placeholder="Mensagem" 
                     value={message} 
                     onChange={handleMessageChange}
