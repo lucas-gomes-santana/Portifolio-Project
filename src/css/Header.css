@@ -18,7 +18,7 @@ header .container-links {
     justify-content: center;
     align-items: center;
     width: 70%;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 header .container-links a {
@@ -58,20 +58,13 @@ header .container-links a {
 
 /*Responsivity*/
 @media (max-width:1000px) {
-    header .container-name {
-        width: 40%;
-    }
-
-    header .container-name h3{
+    header .container-name h3 {
         font-size: 1rem;
     }
 
-    header .container-links {
-        width: 60%;
-    }
-
     header .container-links a {
-        margin-left: 3%;
+        margin-left: 8%;
+        font-size: 1rem;
     }
 }
 
@@ -95,9 +88,9 @@ header .container-links a {
         display: flex;
         position: absolute;
         right: 20px;
-        top: 50%;
+        top: 13%;
         transform: translateY(-50%);
-        z-index: 20;
+        z-index: 10;
     }
 
     header .container-links {
@@ -129,6 +122,10 @@ header .container-links a {
 }
 
 @media (max-width:520px) {
+    header .container-links {
+        margin-top: 0;
+    }
+
     header .container-links.show a {
         font-size: 0.8rem;
     }

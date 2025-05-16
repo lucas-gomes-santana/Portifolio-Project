@@ -2,8 +2,36 @@ import { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../css/Contacts.css';
 
+function formatPhoneNumber(value: string): string {
+    let formattedValue = value.replace(/\D/g, '');
+    
+    if (formattedValue.length > 0) {
+        if (formattedValue.length <= 2) {
+            formattedValue = `(${formattedValue}`;
+        } 
 
-emailjs.init({ // Initialize EmailJS with the public key from the .env file
+        else if (formattedValue.length <= 7) {
+            formattedValue = `(${formattedValue.slice(0, 2)}) ${formattedValue.slice(2)}`;
+        } 
+
+        else if (formattedValue.length <= 11) {
+            formattedValue = `(${formattedValue.slice(0, 2)}) ${formattedValue.slice(2, 7)}-${formattedValue.slice(7)}`;
+        } 
+
+        else {
+            formattedValue = `(${formattedValue.slice(0, 2)}) ${formattedValue.slice(2, 7)}-${formattedValue.slice(7, 11)}`;
+        }
+    }
+    
+    return formattedValue;
+}
+
+function validateEmail(email: string): boolean {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+emailjs.init({
     publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 });
 
@@ -27,7 +55,8 @@ export function Contacts() {
     }
 
     const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setPhone(e.target.value);
+        const formattedPhone = formatPhoneNumber(e.target.value);
+        setPhone(formattedPhone);
     }
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -38,13 +67,13 @@ export function Contacts() {
             return;
         }
 
-        if (email.length < 8) {
+        if (email.length < 8 || !validateEmail(email)) {
             alert("Por favor, insira um email válido");
             return;
         }
 
         function validatePhone(phone: string) {
-            const phoneRegex = /^[0-9]{10}$/;
+            const phoneRegex = /^\(\d{2}\)\s9\d{4}-\d{4}$/;
             return phoneRegex.test(phone);
         }
 
@@ -59,7 +88,7 @@ export function Contacts() {
             const templateParams = {
                 from_name: name,
                 from_email: email,
-                message: message,
+                message: `Mensagem enviada por ${name}\n\n Número: ${phone} \n\n E-mail: ${email}\n\n${message}`,
             };
 
             const response = await emailjs.send(
@@ -113,7 +142,7 @@ export function Contacts() {
                         value={email} 
                         onChange={handleEmailChange}
                         disabled={isSending}
-                        readOnly
+                        required
                     />
                 </div>
 
@@ -129,7 +158,7 @@ export function Contacts() {
               
               <div style={{alignItems: 'flex-start'}} className="container-input">
                 <p>Sua Mensagem:</p> 
-                <textarea 
+                <textarea className='text-container'
                     placeholder="Mensagem" 
                     value={message} 
                     onChange={handleMessageChange}
@@ -140,7 +169,7 @@ export function Contacts() {
                 
 
                 <button type="submit" disabled={isSending}>
-                    {isSending ? 'Sending...' : 'Send'}
+                    {isSending ? 'Enviando...' : 'Enviar'}
                 </button>
 
             </form>
