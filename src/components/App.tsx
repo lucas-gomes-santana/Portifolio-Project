@@ -3,7 +3,7 @@ import Header from './Header.tsx';
 
 function App() {
     return (
-        <Router basename="/Portifolio-Project">
+        <Router>
             <Header/>
         </Router>
     );

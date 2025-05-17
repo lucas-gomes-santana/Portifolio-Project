@@ -35,7 +35,7 @@ function Projects() {
     const projectsData: ProjectElements[] = [
         {
             title: "Site da PeuCar Automotivos",
-            projectImage: "/Portifolio-Project/assets/PeuCar-Website.png",
+            projectImage: "/assets/PeuCar-Website.png",
             projectType: "Aplicação Web",
             link: "https://peucar-automotivos-ipira.vercel.app/",
             description: "Um projeto freelance que desenvolvi para um pequeno negócio de oficina de automóveis. Consiste em um site simples que permite ao usuário ver sobre os serviços da oficina e também enviar uma mensagem diretamente para o Email do proprietário da oficina.",

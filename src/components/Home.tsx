@@ -23,7 +23,7 @@ function Home() {
             >
                 <motion.img 
                     id='animated-foto' 
-                    src="/Portifolio-Project/assets/My-Foto.png" 
+                    src="/assets/My-Foto.png" 
                     alt="Lucas Gomes Santana Foto"
                     variants={imageVariants}
                     whileHover="hover"
